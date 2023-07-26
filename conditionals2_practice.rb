@@ -50,11 +50,21 @@
 # end
 
 # 6. Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
-x = 5
-y = 5
+# x = 5
+# y = 5
 
-if x > 10 || y > 10
-  p 100
+# if x > 10 || y > 10
+#   p 100
+# else
+#   p -100
+# end
+
+# 7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
+
+x = -1
+
+if x < 0
+  p 1776
 else
-  p -100
+  p 1979
 end
