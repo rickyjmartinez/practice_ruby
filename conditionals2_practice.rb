@@ -61,10 +61,21 @@
 
 # 7. Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
 
-x = -1
+# x = -1
 
-if x < 0
-  p 1776
+# if x < 0
+#   p 1776
+# else
+#   p 1979
+# end
+
+# 8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise.
+x = 98
+
+if x == 100
+  p 100
+elsif x == 99
+  p 99
 else
-  p 1979
+  p 0
 end
