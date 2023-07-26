@@ -1,9 +1,6 @@
-# make a manager
-# a manager can do everything an employee can do, and can also send reports
-
 class Employee
   attr_reader :first_name, :last_name, :salary, :active
-  attr_writer :first_name
+  attr_writer :active
 
   def initialize(input_options)
     @first_name = input_options[:first_name]
@@ -13,39 +10,64 @@ class Employee
   end
 
   def print_info
-    p "#{first_name} #{@last_name} makes $#{@salary} per year."
+    puts "#{@first_name} #{@last_name} makes #{@salary} a year."
   end
 
   def give_annual_raise
-    @salary *= 1.05
+    @salary = 1.05 * @salary
   end
 end
 
-class Manager < Employee
-  def send_report
-    p "about to go send the report"
-    # some other logic here
-    p "just sent the report"
-  end
-end
-
-# employee1 = Employee.new(first_name: "Majora", last_name: "Carter", salary: 80000, active: true)
-# p employee1.first_name
-# employee1.first_name=("Amy")
-# employee1.print_info
-
-# employee2 = Employee.new(first_name: "Danilo", last_name: "Campos", salary: 100000, active: false)
+employee1 = Employee.new({ first_name: "Majora", last_name: "Carter", salary: 80000, active: true })
+employee2 = Employee.new(first_name: "Danilo", last_name: "Campos", salary: 70000, active: true)
+# p employee1.give_annual_raise
 # employee2.print_info
 
-manager = Manager.new(first_name: "Manny", last_name: "Manageros", salary: 200_000, active: true)
+class Manager < Employee
+  def initialize(input_options)
+    super
+    @employees = input_options[:employees]
+  end
 
-manager.print_info
-manager.send_report
+  def send_report
+    puts "Sending email..."
+    # use email sending library...
+    puts "Email sent!"
+  end
 
-# DRY code
-# DON'T
-# REPEAT
-# YOURSELF
+  # make a method in manager class called give_all_raises
+  # run it to make sure it works
+  # ** print out all employees in that method
+  # get 1 employee out of the array
+  # give that employee a raise
+  # figure out how to give all the employees raises (loop)
+  def give_all_raises
+    @employees.each do |employee|
+      employee.give_annual_raise
+    end
+    # p @employees[0].give_annual_raise
+    # p @employees[1].give_annual_raise
+  end
 
-# WET
-# write everything twice
+  def fire_all_employees
+    @employees.each do |employee|
+      employee.active = false
+    end
+    p "firing all employees"
+  end
+end
+
+manager = Manager.new(first_name: "Saron", last_name: "Yitbarek", salary: 100000, active: true, employees: [employee1, employee2])
+# manager.print_info
+# manager.send_report
+
+# p manager.give_all_raises
+p employee1.salary
+p manager.salary
+p employee1.active
+p employee2.active
+
+# manager.fire_all_employees
+
+# p employee1.active
+# p employee2.active
