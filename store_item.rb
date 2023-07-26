@@ -19,15 +19,15 @@
 # p item2
 # p item3
 
-class Item 
-  attr_reader :name, :price, :color
-  attr_writer :name, :price, :color
+# class Item 
+#   attr_reader :name, :price, :color
+#   attr_writer :name, :price, :color
 
-  def initialize (input_options)
-    @name = input_options[:name]
-    @price = input_options[:price]
-    @color = input_options[:color]
-  end 
+#   def initialize (input_options)
+#     @name = input_options[:name]
+#     @price = input_options[:price]
+#     @color = input_options[:color]
+#   end 
 
   # def name
   #   @name 
@@ -53,13 +53,13 @@ class Item
   #   @color = new_color
   # end
 
-end 
+# end 
 
-item = Item.new(name:"hiking boots", price:100, color: "brown")
+# item = Item.new(name:"hiking boots", price:100, color: "brown")
 
-puts item.name
-item.name="pants"
-puts item.name
+# puts item.name
+# item.name="pants"
+# puts item.name
 # puts item.price 
 # item.price=30
 # puts item.price
