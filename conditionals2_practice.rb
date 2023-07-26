@@ -70,12 +70,22 @@
 # end
 
 # 8. Use a variable to store a number, then write a condition that prints 100 if the number equals 100, prints 99 if the number is equal to 99, and prints 0 otherwise.
-x = 98
+# x = 98
 
-if x == 100
-  p 100
-elsif x == 99
-  p 99
+# if x == 100
+#   p 100
+# elsif x == 99
+#   p 99
+# else
+#   p 0
+# end
+
+# 9. Use variables to store two numbers, then write a condition that prints 1 if the first number is less than zero and the second number is greater than 0, and prints 0 otherwise.
+x = -1
+y = 34
+
+if x < 0 && y > 0
+  p 1
 else
   p 0
 end
