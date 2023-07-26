@@ -14,7 +14,7 @@ if x < 10
   p -1
 elsif x > 10
   p 1
-elsif x == 10
+else
   p 0
 end
 
