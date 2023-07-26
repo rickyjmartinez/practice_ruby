@@ -20,11 +20,20 @@
 # end
 
 # 3. Use variables to store two numbers, then write a condition that prints 1 if the numbers are both less than 10, and prints 0 otherwise.
-x = 5
-y = 7
+# x = 5
+# y = 7
 
-if x < 10 && y < 10
-  p 1
+# if x < 10 && y < 10
+#   p 1
+# else
+#   p 0
+# end
+
+# 4. Use a variable to store a number, then write a condition that prints 1 if the number is over 9000, and prints -1 otherwise.
+x = 9001
+
+if x > 9000
+  p "IT'S OVER 9000!!!" #havin a lil fun with it
 else
-  p 0
+  p -1
 end
