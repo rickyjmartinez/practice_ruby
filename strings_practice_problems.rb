@@ -36,8 +36,16 @@
 # p "the three colors are #{color1}, #{color2}, and #{color3}"
 # 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 
-puts "please enter a name"
-name = gets.chomp.downcase
-if name != "santa"
-  puts "you're not santa."
-end
+# puts "please enter a name"
+# name = gets.chomp.downcase
+# if name != "santa"
+#   puts "you're not santa."
+# end
+
+# 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+title = "The Hobbit"
+author = "JRR Tolkien"
+
+p "The book" + " " + title + " " + "was written by" +
+    " " + author
