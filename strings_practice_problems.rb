@@ -44,8 +44,15 @@
 
 # 7. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
 
+# title = "The Hobbit"
+# author = "JRR Tolkien"
+
+# p "The book" + " " + title + " " + "was written by" +
+#     " " + author
+
+# 8. Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
 title = "The Hobbit"
 author = "JRR Tolkien"
 
-p "The book" + " " + title + " " + "was written by" +
-    " " + author
+p "the book #{title} was written by #{author}"
