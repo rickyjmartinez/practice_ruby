@@ -29,8 +29,15 @@
 
 # 5. Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
 
-color1 = "red"
-color2 = "blue"
-color3 = "green"
+# color1 = "red"
+# color2 = "blue"
+# color3 = "green"
 
-p "the three colors are #{color1}, #{color2}, and #{color3}"
+# p "the three colors are #{color1}, #{color2}, and #{color3}"
+# 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+puts "please enter a name"
+name = gets.chomp.downcase
+if name != "santa"
+  puts "you're not santa."
+end
