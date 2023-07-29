@@ -11,3 +11,10 @@
 # if number > 100
 #   p "that's a big number"
 # end
+
+# 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
+
+puts "please enter two numbers"
+number1 = gets.chomp.to_i
+number2 = gets.chomp.to_i
+p number1 + number2
