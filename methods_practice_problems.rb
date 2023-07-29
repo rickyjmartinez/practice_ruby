@@ -26,6 +26,12 @@
 # p word
 
 # 5. Write a program that asks the user to enter a number, then prints the number times 10.
-puts "please enter a number"
-number = gets.chomp.to_i * 10
-p number
+# puts "please enter a number"
+# number = gets.chomp.to_i * 10
+# p number
+
+# 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
+puts "please enter two words"
+word1 = gets.chomp
+word2 = gets.chomp
+p word1.upcase + " " + word2.upcase
