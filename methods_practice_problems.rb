@@ -21,6 +21,11 @@
 
 # 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
 
-puts "please enter a word"
-word = gets.chomp.reverse
-p word
+# puts "please enter a word"
+# word = gets.chomp.reverse
+# p word
+
+# 5. Write a program that asks the user to enter a number, then prints the number times 10.
+puts "please enter a number"
+number = gets.chomp.to_i * 10
+p number
