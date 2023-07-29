@@ -38,6 +38,13 @@
 
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
-puts "please enter a word"
-word = gets.chomp.length
-p word
+# puts "please enter a word"
+# word = gets.chomp.length
+# p word
+
+# 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
+puts "please enter a number"
+number = gets.chomp.to_i
+if number < 0
+  puts "that's a negative number"
+end
