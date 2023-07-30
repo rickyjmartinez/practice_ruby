@@ -46,6 +46,12 @@
 # p laptop[1][:model]
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
-definition = { apple: "a red fruit", chair: "something to sit on" }
-definition[:pencil] = "something you write with"
-p definition
+# definition = { apple: "a red fruit", chair: "something to sit on" }
+# definition[:pencil] = "something you write with"
+# p definition
+
+# 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+shirt = { brand: "Hanes", color: "black", size: "large" }
+p shirt[:brand]
+p shirt[:color]
+p shirt[:size]
