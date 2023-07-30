@@ -37,10 +37,17 @@
 # end
 
 # 6. Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
-while true
-  puts "please enter a number"
-  number = gets.chomp.to_i
-  if number > 10
-    break
-  end
+# while true
+#   puts "please enter a number"
+#   number = gets.chomp.to_i
+#   if number > 10
+#     break
+#   end
+# end
+
+# 7. Write a while loop that prints the numbers 50 to 70.
+i = 50
+while i <= 70
+  p i
+  i += 1
 end
