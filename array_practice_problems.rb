@@ -30,9 +30,14 @@
 # p array
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
-array = ["bob", "rob", "cob"]
-i = 0
-while i < array.length
-  p array[i]
-  i += 1
-end
+# array = ["bob", "rob", "cob"]
+# i = 0
+# while i < array.length
+#   p array[i]
+#   i += 1
+# end
+
+# 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+array = ["zero", "one"]
+array << "two"
+p array
