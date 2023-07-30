@@ -10,4 +10,10 @@ array = [
   { first: "rick", last: "sanchez" },
   { first: "morty", last: "smith" },
 ]
-p array[0]
+p array[0][:first]
+p array[0][:last]
+
+# 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+menu = { hotdog: 1, burger: 2, fries: 1 }
+menu[:chips] = 1
+p menu
