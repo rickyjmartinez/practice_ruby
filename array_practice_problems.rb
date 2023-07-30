@@ -43,6 +43,14 @@
 # p array
 
 # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
-array = [1, 2, 3, 4, 5]
-array[0] = array[0] * 10
-p array
+# array = [1, 2, 3, 4, 5]
+# array[0] = array[0] * 10
+# p array
+
+# 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
+array = [1, 2]
+i = 0
+while i < array.length
+  p array[i]
+  i += 1
+end
