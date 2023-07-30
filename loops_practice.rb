@@ -22,7 +22,6 @@
 # end
 
 # 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
-
 # i = 5
 
 # while i <= 100
@@ -31,8 +30,17 @@
 # end
 
 # 5. Write a while loop that prints the number 9000 ten times.
-i = 1
-while i <= 10
-  p 9000
-  i += 1
+# i = 1
+# while i <= 10
+#   p 9000
+#   i += 1
+# end
+
+# 6. Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
+while true
+  puts "please enter a number"
+  number = gets.chomp.to_i
+  if number > 10
+    break
+  end
 end
