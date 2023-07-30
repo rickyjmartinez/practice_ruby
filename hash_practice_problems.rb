@@ -19,8 +19,14 @@
 # p menu
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
-book = { title: "the hobbit", author: "jrr tolkien", pages: 500, language: "english" }
-p book[:title]
-p book[:author]
-p book[:pages]
-p book[:language]
+# book = { title: "the hobbit", author: "jrr tolkien", pages: 500, language: "english" }
+# p book[:title]
+# p book[:author]
+# p book[:pages]
+# p book[:language]
+
+# 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+array = [{ title: "The Hobbit", author: "JRR Tolkien" }, { title: "The Stranger", author: "Albert Camus" }, { title: "Slaughterhouse 5", author: "Kurt Vonnegut" }]
+
+p array[2][:author]
