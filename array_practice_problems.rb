@@ -18,8 +18,13 @@
 # end
 
 # 4. Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
-array = [0]
-array << 1
-array << 2
-array << 3
+# array = [0]
+# array << 1
+# array << 2
+# array << 3
+# p array
+
+# 5. Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+array = ["zero", "one", "two"]
+array[2] = array[2].upcase
 p array
