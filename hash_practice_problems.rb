@@ -27,6 +27,12 @@
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-array = [{ title: "The Hobbit", author: "JRR Tolkien" }, { title: "The Stranger", author: "Albert Camus" }, { title: "Slaughterhouse 5", author: "Kurt Vonnegut" }]
+# array = [{ title: "The Hobbit", author: "JRR Tolkien" }, { title: "The Stranger", author: "Albert Camus" }, { title: "Slaughterhouse 5", author: "Kurt Vonnegut" }]
 
-p array[2][:author]
+# p array[2][:author]
+
+# 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+
+hash = { Illinois: "Springfield", Indiana: "Indianapolis", Ohio: "Columbus" }
+hash[:New_York] = "Albany"
+p hash
