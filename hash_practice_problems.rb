@@ -33,6 +33,13 @@
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
-hash = { Illinois: "Springfield", Indiana: "Indianapolis", Ohio: "Columbus" }
-hash[:New_York] = "Albany"
-p hash
+# hash = { Illinois: "Springfield", Indiana: "Indianapolis", Ohio: "Columbus" }
+# hash[:New_York] = "Albany"
+# p hash
+
+# 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+laptop = { brand: "Apple", model: "macbook air", year: 2020 }
+p laptop[:brand]
+p laptop[:model]
+p laptop[:year]
