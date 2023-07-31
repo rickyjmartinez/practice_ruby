@@ -62,7 +62,7 @@
 # p avg(2, 3, 5)
 
 # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
-def ten_plus_30(x)
+def ten_plus_thirty(x)
   (x * 10) + 30
 end
 
