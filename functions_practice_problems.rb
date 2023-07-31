@@ -41,7 +41,7 @@ end
 p combine("test1", "test2", "test3")
 
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
-# def number_to_string(x)
+def number_to_string(x)
   x.to_s
 end
 
