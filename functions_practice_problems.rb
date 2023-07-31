@@ -27,8 +27,16 @@
 # p square(4)
 
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
-def first_letter(string)
-  string.chr
+# def first_letter(string)
+#   string.chr
+# end
+
+# p first_letter("test")
+
+# 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+
+def combine(string1, string2, string3)
+  string1 + " " + string2 + " " + string3
 end
 
-p first_letter("test")
+p combine("test1", "test2", "test3")
