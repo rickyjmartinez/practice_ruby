@@ -20,8 +20,15 @@
 # p subtract(3, 4)
 
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
-def square(x)
-  x * x
+# def square(x)
+#   x * x
+# end
+
+# p square(4)
+
+# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
+def first_letter(string)
+  string.chr
 end
 
-p square(4)
+p first_letter("test")
