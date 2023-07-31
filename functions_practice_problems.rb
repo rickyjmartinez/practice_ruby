@@ -48,8 +48,15 @@
 # p number_to_string(4)
 
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
-def five_times(string)
-  string * 5
+# def five_times(string)
+#   string * 5
+# end
+
+# p five_times("test")
+
+# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+def avg(x, y, z)
+  ((x + y + z) / 3.0).to_f
 end
 
-p five_times("test")
+p avg(2, 3, 5)
