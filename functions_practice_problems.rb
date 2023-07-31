@@ -34,9 +34,15 @@
 # p first_letter("test")
 
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+# def combine(string1, string2, string3)
+#   string1 + " " + string2 + " " + string3
+# end
 
-def combine(string1, string2, string3)
-  string1 + " " + string2 + " " + string3
+# p combine("test1", "test2", "test3")
+
+# 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
+def number_to_string(x)
+  x.to_s
 end
 
-p combine("test1", "test2", "test3")
+p number_to_string(4)
