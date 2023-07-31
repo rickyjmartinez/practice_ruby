@@ -66,4 +66,4 @@ def ten_plus_thirty(x)
   (x * 10) + 30
 end
 
-p ten_plus_30(10)
+p ten_plus_thirty(10)
