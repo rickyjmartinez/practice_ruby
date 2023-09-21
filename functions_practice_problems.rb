@@ -169,9 +169,30 @@ p cap("hello")
 
 # 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
 
+def subtract(x,y)
+  num = x - y 
+  num
+end 
+
+p subtract(3,1)
+
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
 
+def square(x)
+  x = x * x 
+  x 
+end 
+
+p square(10)
+
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
+
+def first_letter(string)
+  string = string[0]
+  string
+end 
+
+p first_letter("hello")
 
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
