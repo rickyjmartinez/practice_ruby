@@ -196,6 +196,13 @@ p first_letter("hello")
 
 # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
+def three_strings(x,y,z)
+  one = x + " " + y + " " + z
+  one
+end
+
+p three_strings("hi","hey","hello")
+
 # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
 # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
