@@ -1,0 +1,22 @@
+What’s on your todo list?
+What are the unknowns?
+What do you have to figure out?
+Where do. you start?
+What’s the plan?
+
+to do list: 
+make a backend api? 
+make routes - get and post actions
+pass some example data 
+receipt model?
+
+unknowns: 
+Go language? Docker? 
+
+start on? 
+
+making a model and the data layer with a rails app 
+
+have to figure out? 
+
+
