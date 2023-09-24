@@ -169,8 +169,26 @@ p states
 
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
+laptop = {brand:"apple", model:"macbook air", year:2020}
+p laptop[:brand]
+p laptop[:model]
+p laptop[:year]
+
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
+laptops = [{brand:"apple", model:"macbook"},{brand:"dell", model:"xps"},{brand:"microsoft", model:"surface"}]
+
+p laptops[1][:model]
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+definitions = {apple:"fruit", carrot:"vegetable"}
+definitions[:water] = "liquid"
+p definitions
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+shirt = {brand:"hanes", color:"black", size:"large"}
+p shirt[:brand]
+p shirt[:color]
+p shirt[:size]
+  
