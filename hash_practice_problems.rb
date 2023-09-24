@@ -147,12 +147,25 @@ menu[:salad] = 2
 p menu
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+book = {title:"the hobbit", author:"jrr tolkien", pages:500, language:"english"}
 
+p book[:title]
+p book[:author]
+p book[:pages]
+p book[:language]
 
 
 # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
+books = [{title:"the hobbit", author:"jrr tolkien"},{title:"the jungle", author:"upton sinclair"},{title:"of mice and men", author:"john steinbeck"}]
+
+p books[2][:author]
+
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+
+states = {illinois:"springfield",indiana:"indianapolis",ohio:"colombus"}
+states[:new_york] = "albany"
+p states
 
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
