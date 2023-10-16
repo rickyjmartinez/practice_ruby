@@ -4,14 +4,30 @@
 
 
 
-def total(x)  
-  sum = 0 
+# def total(x)  
+#   sum = 0 
+#   i = 0 
+#   while i < x.length 
+#     sum += x[i]
+#     i += 1
+#   end 
+#   sum
+# end 
+
+# p total([1,2,3,4])
+
+# 2) Write a function that takes in an array of strings and returns the smallest string.
+
+def smallest_string(array)
+  smallest = array[0]
   i = 0 
-  while i < x.length 
-    sum += x[i]
-    i += 1
+  while i < array.length
+    if smallest.length > array[i].length 
+      smallest = array[i]
+    end 
+    i += 1 
   end 
-  sum
+  smallest
 end 
 
-p total([1,2,3,4])
+p smallest_string(["hello", "hi", "hey","h"])
