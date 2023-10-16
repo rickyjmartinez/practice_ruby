@@ -18,16 +18,31 @@
 
 # 2) Write a function that takes in an array of strings and returns the smallest string.
 
-def smallest_string(array)
-  smallest = array[0]
-  i = 0 
-  while i < array.length
-    if smallest.length > array[i].length 
-      smallest = array[i]
-    end 
-    i += 1 
-  end 
-  smallest
-end 
+# def smallest_string(array)
+#   smallest = array[0]
+#   i = 0 
+#   while i < array.length
+#     if smallest.length > array[i].length 
+#       smallest = array[i]
+#     end 
+#     i += 1 
+#   end 
+#   smallest
+# end 
 
-p smallest_string(["hello", "hi", "hey","h"])
+# p smallest_string(["hello", "hi", "hey","h"])
+
+# 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+
+
+def reverse(array)
+  new_array = []
+  i = array.length - 1
+
+  while i >= 0
+    new_array << array[i]
+    i = i - 1 
+  end 
+  new_array
+end 
+p reverse([3,2,1])
