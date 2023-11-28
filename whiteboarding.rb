@@ -95,3 +95,58 @@
 
 # 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
 
+
+
+
+#Given an array, write a function that returns an array that contains the original array’s values in reverse.
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [5, 4, 3, 2, 1]
+
+#create a new array 
+#assume input will always be valid 
+#loop of my choice 
+
+#while loop, index = input.lenght-1 
+#while index >= 0 
+# index -= 1 
+#array2 << input[index]
+#p array2 
+
+input = [1, 2, 3, 4, 5]
+
+def reverse(input)
+  index = input.length - 1 
+  array2 = []
+  while index >= 0 
+    array2<< input[index]
+    index -= 1 
+  end 
+  return array2 
+end
+
+p reverse(input)
+
+#time 
+#space
+
+#O(N) O(logN) O(N^2)
+
+# input = [1,2,3]
+# output = [1,2,3]
+
+# input = [1,23]
+# array2 = []
+# i = 0 
+
+# while i < array.length
+#  array2 << array[i]
+#  i+= 1 
+# end 
+
+# p array2
+
+#notes: look for an edge case, ask questions! "can we assume input will always be valid?' "do we want to create space?" "create a new array? or just print the outputs?" before coding, talk about what I am going to do. 
+
+#next time - bubble sort
+
