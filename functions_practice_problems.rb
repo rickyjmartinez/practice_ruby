@@ -150,86 +150,86 @@
 
 
 
-# 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
+# # 1. Write a function that takes in a number and returns the number times two. Then run the function and print the result.
 
-def times_two(x)
-  x = x * 2 
-  x
-end 
-p times_two(2)
+# def times_two(x)
+#   x = x * 2 
+#   x
+# end 
+# p times_two(2)
 
-# 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
+# # 2. Write a function that takes in a string and returns the string with all capital letters. Then run the function and print the result.
 
-def cap(string)
-  string = string.upcase
-  string
-end
+# def cap(string)
+#   string = string.upcase
+#   string
+# end
 
-p cap("hello")
+# p cap("hello")
 
-# 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
+# # 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
 
-def subtract(x,y)
-  num = x - y 
-  num
-end 
+# def subtract(x,y)
+#   num = x - y 
+#   num
+# end 
 
-p subtract(3,1)
+# p subtract(3,1)
 
-# 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+# # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
 
-def square(x)
-  x = x * x 
-  x 
-end 
+# def square(x)
+#   x = x * x 
+#   x 
+# end 
 
-p square(10)
+# p square(10)
 
-# 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
+# # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
-def first_letter(string)
-  string = string[0]
-  string
-end 
+# def first_letter(string)
+#   string = string[0]
+#   string
+# end 
 
-p first_letter("hello")
+# p first_letter("hello")
 
-# 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
+# # 6. Write a function that takes in three strings and returns a string that combines all three strings with spaces in between. Then run the function and print the result.
 
-def three_strings(x,y,z)
-  one = x + " " + y + " " + z
-  one
-end
+# def three_strings(x,y,z)
+#   one = x + " " + y + " " + z
+#   one
+# end
 
-p three_strings("hi","hey","hello")
+# p three_strings("hi","hey","hello")
 
-# 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
+# # 7. Write a function that takes in a number and returns the number as a string. Then run the function and print the result.
 
-def to_string(x)
-  x = x.to_s
-  x
-end
+# def to_string(x)
+#   x = x.to_s
+#   x
+# end
 
-p to_string(4)
+# p to_string(4)
 
-# 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
+# # 8. Write a function that takes in a string and returns the string repeated 5 times. Then run the function and print the result.
 
-def five_times(string)
-  string * 5
-end 
+# def five_times(string)
+#   string * 5
+# end 
 
-p five_times("banner")
-# 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
+# p five_times("banner")
+# # 9. Write a function that takes in 3 numbers and returns the average (the sum divided by 3.0). Then run the function and print the result.
 
-def avg(x,y,z)
-  (x+y+z)/3.0.to_f
-end 
+# def avg(x,y,z)
+#   (x+y+z)/3.0.to_f
+# end 
 
-p avg(1,2,4)
-# 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
+# p avg(1,2,4)
+# # 10. Write a function that takes in a number and returns the number times 10 plus 30. Then run the function and print the result.
 
-def times_ten_plus_thirty(x)
-  x * 10 + 30
-end 
+# def times_ten_plus_thirty(x)
+#   x * 10 + 30
+# end 
 
-p times_ten_plus_thirty(10)
+# p times_ten_plus_thirty(10)
