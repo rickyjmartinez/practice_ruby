@@ -262,3 +262,178 @@ def reverse(array)
 end 
 
 p reverse([1, 2, 3, 4, 5])
+
+# Write a function that returns the reverse of a given string.
+
+# Input: “abcde”
+# Output: “edcba”
+
+def reverse_string(string)
+  i = string.length - 1
+  result = ""
+
+  while i >= 0 
+    result += string[i]
+    i -= 1
+  end 
+  
+  return result
+end 
+
+p reverse_string(["h", "e", "l", "l", "o"])
+
+# Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+# Input: “i hate $ but i love money i know i know im crazy”
+# Output: true
+
+# Input: “abcdefghijklmnopqrstuvwxyz”
+# Output: false
+
+def money_sign(string)
+ output = false
+ i = 0 
+ while i < string.length
+  if string[i] == "$" 
+    output = true
+  end 
+  i += 1
+ end 
+ return output
+end 
+
+p money_sign("abcdefghijklmnopqrstuvwxyz")
+p money_sign("i hate $ but i love money i know i know im crazy")
+
+# Write a function that returns whether a given number is a prime number.
+
+# def prime(integer)
+#   output = false
+#   if integer / integer == 1 && integer > 1 
+#     output = true
+#   end 
+#   return output
+# end
+
+# p prime(5)
+# p prime(9)
+
+def prime(integer)
+  output = true  # Assume the number is prime initially
+
+  if integer <= 1
+    output = false  # Numbers less than or equal to 1 are not prime
+  else
+    i = 2
+    while i * i <= integer do
+      if integer % i == 0
+        output = false  # If the number has a divisor other than 1 and itself, it's not prime
+        break
+      end
+      i += 1
+    end
+  end
+
+  return output
+end
+
+# Test the function
+puts prime(5) # Output: true
+puts prime(9) # Output: false
+
+
+# Write a function that prints out every number from 1 to N, with the following exceptions:
+
+# If the number is divisible by 3, print out "FIZZ".
+# If the number is divisible by 5, print out "BUZZ".
+# If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
+
+def fizzbuzz(int)
+  output = int
+  if int % 3 == 0 && int % 5 == 0 
+    output = "fizzbuzz"
+  elsif int % 3 == 0 
+    output = "fizz"
+  elsif int % 5 == 0 
+    output = "buzz"
+  else 
+  end 
+  return output
+end 
+
+p fizzbuzz(22)
+
+def fizzbuzz(n)
+  (1..n).each do |i|
+    if i % 3 == 0 && i % 5 == 0
+      puts "FizzBuzz"
+    elsif i % 3 == 0
+      puts "Fizz"
+    elsif i % 5 == 0
+      puts "Buzz"
+    else
+      puts i
+    end
+  end
+end
+
+# Test the function for numbers from 1 to 22
+fizzbuzz(22)
+
+#Sort the algorithm using bubble sort
+#sort the array from smallest to largest
+input = [4, 2, 1, 3, 5]
+output = [ 1, 2, 3, 4, 5]
+
+# compare first number with second and if second is bigger, switch places. 
+
+# output = [2,4,1,3,5]
+
+# compare second number with the third number. if 2nd is bigger, switch those numbers. 
+
+# output = [2,1,4,3,5]
+
+# 3rd with 4th, switch 
+# output = [2,1,3,4,5]
+
+# 4th with 5th, stay the same 
+# output = [2,1,3,4,5]
+
+# compare 1st and 2nd, switch 
+# output = [1,2,3,4,5]
+
+# but then would need to  complete the entire array 
+
+def bubble_sort(array)
+i = 0
+while i < array.length
+  j = 0
+  while j < array.length - 1
+    if array[j] > array[j+1]
+      #switch
+      array[j], array[j+1] = array[j+1], array[j] 
+    end
+    j += 1 
+  end 
+    i += 1 
+end
+
+return array 
+end
+
+# def bubble_sort(array)
+#   n = array.length
+#   (0...n).each do |i|
+#     (0...(n - i - 1)).each do |j|
+#       if array[j] > array[j + 1]
+#         # Swap elements
+#         array[j], array[j + 1] = array[j + 1], array[j]
+#       end
+#     end
+#   end
+#   return array
+# end
+
+# Swapping values in an array
+# arr[0], arr[1] = arr[1], arr[0]
+p bubble_sort(input)
